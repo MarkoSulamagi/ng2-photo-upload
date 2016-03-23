@@ -7,7 +7,7 @@ var webpackConfig = {
   entry: {
     'polyfills': './src/polyfills.ts',
     'vendor':    './src/vendor.ts',
-    'app':       './src/app.ts',
+    'app':       './src/boot.ts',
   },
 
   output: {
@@ -27,22 +27,6 @@ var webpackConfig = {
   }
 
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Our Webpack Defaults
 var defaultConfig = {

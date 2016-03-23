@@ -1,0 +1,59 @@
+.hidden {
+    display: none;
+}
+
+span.darken {
+    position: relative;
+    display: inline-block;
+    margin-top: 2px;
+    width: 160px;
+    height: 103px;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+    /* Safari, Opera, and Chrome */
+    display: -webkit-inline-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+}
+.darken img {
+    max-height: 97px;
+    max-width: 150px;
+    display: block;
+    margin: auto;
+}
+.delete-photo-icon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: black;
+    background: url('https://admin.rentmarket.eu/assets/images/delete-photo-icon.png') no-repeat;
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+    cursor: pointer;
+}
+.darken-photo {
+    display: inline-block;
+    padding: 4px;
+    position: absolute;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.darken-photo {
+    -webkit-transition: all 0.2s linear 0.2s;
+    -moz-transition: all 0.2s linear 0.2s;
+    -ms-transition: all 0.2s linear 0.2s;
+    -o-transition: all 0.2s linear 0.2s;
+    transition: all 0.2s linear 0.2s;
+}
+.darken-photo:hover {
+    opacity: 0.6;
+    background-color: #000000;
+}

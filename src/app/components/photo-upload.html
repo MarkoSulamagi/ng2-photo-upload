@@ -1,0 +1,14 @@
+<label drag-drop-box *ngIf="photo == null" (onFileSelected)="onFileSelected($event)">
+    <span class="darken">
+        <div class="darken-photo unselected-photo"></div>
+        <img src="https://admin.rentmarket.eu/assets/images/empty-photo-thumbnail-160x107.png" class="unselected-photo" alt="Lae foto">
+        <input click-to-upload type="file" class="hidden" (onFileSelected)="onFileSelected($event)">
+    </span>
+</label>
+
+<div *ngIf="photo != null">
+    <span class="darken">
+        <div class="darken-photo"><span class="delete-photo-icon" (click)="removePhoto()"></span></div>
+        <img [src]="photo.file_url" alt="Uploaded photo">
+    </span>
+</div>

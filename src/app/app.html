@@ -1,0 +1,8 @@
+<div class="container">
+    <h1>Ng2-slim-file-upload</h1>
+
+    <photo-upload [(uploading)]="uploading" [(photo)]="photo"></photo-upload>
+
+    <p *ngIf="uploading">Uploading</p>
+    <p *ngIf="photo != null">Photo uploaded</p>
+</div>
